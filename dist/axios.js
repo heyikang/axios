@@ -1,4 +1,3 @@
-/* axios v0.20.0 | (c) 2020 by Matt Zabriskie */
 (function webpackUniversalModuleDefinition(root, factory) {
 	if(typeof exports === 'object' && typeof module === 'object')
 		module.exports = factory();
@@ -865,16 +864,19 @@ return /******/ (function(modules) { // webpackBootstrap
 	  }
 	}
 	
+	/**
+	 * @description Node.js only
+	 */
 	function getDefaultAdapter() {
-	  var adapter;
-	  if (typeof XMLHttpRequest !== 'undefined') {
-	    // For browsers use XHR adapter
-	    adapter = __webpack_require__(12);
-	  } else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
-	    // For node use HTTP adapter
-	    adapter = __webpack_require__(12);
-	  }
-	  return adapter;
+	  // var adapter;
+	  // if (typeof XMLHttpRequest !== 'undefined') {
+	  //   // For browsers use XHR adapter
+	  //   adapter = require('./adapters/xhr');
+	  // } else if (typeof process !== 'undefined' && Object.prototype.toString.call(process) === '[object process]') {
+	  //   // For node use HTTP adapter
+	  //   adapter = require('./adapters/http');
+	  // }
+	  return __webpack_require__(12);
 	}
 	
 	var defaults = {

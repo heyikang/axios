@@ -1,5 +1,5 @@
 {
-  "name": "axios",
+  "name": "@heyikang/axios-node-only",
   "version": "0.20.0",
   "description": "Promise based HTTP client for the browser and node.js",
   "main": "index.js",
